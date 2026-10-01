@@ -1,0 +1,6 @@
+include constraints-tested.txt
+include PROJECT_SPEC.md
+include THIRD_PARTY_NOTICES.md
+include benchmark-results.json
+recursive-include tests *.py
+recursive-include examples *.py

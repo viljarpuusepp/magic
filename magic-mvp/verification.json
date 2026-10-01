@@ -1,0 +1,12 @@
+{
+  "tests_passed": 93,
+  "tests_failed": 0,
+  "ruff_check": "passed",
+  "ruff_format": "passed",
+  "wheel_smoke_test": "all four requested calls passed outside source tree with sockets blocked",
+  "examples": "examples/demo.py passed",
+  "benchmark_case_count": 46,
+  "top_1_accuracy": 1.0,
+  "top_3_accuracy": 1.0,
+  "argument_mapping_accuracy": 1.0
+}

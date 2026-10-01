@@ -1,0 +1,2037 @@
+[
+  {
+    "id": "numpy.mean",
+    "package": "numpy",
+    "module": "numpy",
+    "function": "mean",
+    "description": "Calculate the arithmetic average of numeric values or an array. Sum divided by count.",
+    "semantic_group": "mean",
+    "parameters": [
+      {
+        "name": "a",
+        "description": "input numbers or array",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "axis along which to aggregate",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "keepdims",
+        "description": "retain reduced dimensions",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "mean",
+      "average",
+      "arithmetic mean",
+      "average of numbers"
+    ],
+    "parameter_aliases": {
+      "data": "a",
+      "values": "a",
+      "numbers": "a",
+      "array": "a",
+      "input": "a"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "numpy.median",
+    "package": "numpy",
+    "module": "numpy",
+    "function": "median",
+    "description": "Calculate the middle value, the 50th percentile, of sorted numbers.",
+    "semantic_group": "median",
+    "parameters": [
+      {
+        "name": "a",
+        "description": "input numbers or array",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "axis along which to aggregate",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "keepdims",
+        "description": "retain reduced dimensions",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "median",
+      "middle value"
+    ],
+    "parameter_aliases": {
+      "data": "a",
+      "values": "a",
+      "numbers": "a",
+      "array": "a",
+      "input": "a"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "numpy.std",
+    "package": "numpy",
+    "module": "numpy",
+    "function": "std",
+    "description": "Calculate population standard deviation, the square root of variance. Set ddof=1 for a sample estimate.",
+    "semantic_group": "deviation.population",
+    "parameters": [
+      {
+        "name": "a",
+        "description": "input numbers or array",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "axis along which to aggregate",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "ddof",
+        "description": "degrees of freedom correction",
+        "type_hint": "integer",
+        "required": false,
+        "default": 0,
+        "kind": "keyword_only"
+      },
+      {
+        "name": "keepdims",
+        "description": "retain reduced dimensions",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "std",
+      "standard deviation",
+      "population standard deviation"
+    ],
+    "parameter_aliases": {
+      "data": "a",
+      "values": "a",
+      "numbers": "a",
+      "array": "a",
+      "input": "a"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "numpy.var",
+    "package": "numpy",
+    "module": "numpy",
+    "function": "var",
+    "description": "Calculate population variance, the average squared deviations from the mean.",
+    "semantic_group": "variance.population",
+    "parameters": [
+      {
+        "name": "a",
+        "description": "input numbers or array",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "axis along which to aggregate",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "ddof",
+        "description": "degrees of freedom correction",
+        "type_hint": "integer",
+        "required": false,
+        "default": 0,
+        "kind": "keyword_only"
+      },
+      {
+        "name": "keepdims",
+        "description": "retain reduced dimensions",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "var",
+      "variance",
+      "population variance"
+    ],
+    "parameter_aliases": {
+      "data": "a",
+      "values": "a",
+      "numbers": "a",
+      "array": "a",
+      "input": "a"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "numpy.sum",
+    "package": "numpy",
+    "module": "numpy",
+    "function": "sum",
+    "description": "Add up numbers to obtain their total.",
+    "semantic_group": "sum",
+    "parameters": [
+      {
+        "name": "a",
+        "description": "input numbers or array",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "axis along which to aggregate",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "keepdims",
+        "description": "retain reduced dimensions",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "sum",
+      "total",
+      "add numbers"
+    ],
+    "parameter_aliases": {
+      "data": "a",
+      "values": "a",
+      "numbers": "a",
+      "array": "a",
+      "input": "a"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "numpy.min",
+    "package": "numpy",
+    "module": "numpy",
+    "function": "min",
+    "description": "Find the smallest value in numbers or an array.",
+    "semantic_group": "min",
+    "parameters": [
+      {
+        "name": "a",
+        "description": "input numbers or array",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "axis along which to aggregate",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "keepdims",
+        "description": "retain reduced dimensions",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "min",
+      "minimum",
+      "smallest value"
+    ],
+    "parameter_aliases": {
+      "data": "a",
+      "values": "a",
+      "numbers": "a",
+      "array": "a",
+      "input": "a"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "numpy.max",
+    "package": "numpy",
+    "module": "numpy",
+    "function": "max",
+    "description": "Find the largest value in numbers or an array.",
+    "semantic_group": "max",
+    "parameters": [
+      {
+        "name": "a",
+        "description": "input numbers or array",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "axis along which to aggregate",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "keepdims",
+        "description": "retain reduced dimensions",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "max",
+      "maximum",
+      "largest value"
+    ],
+    "parameter_aliases": {
+      "data": "a",
+      "values": "a",
+      "numbers": "a",
+      "array": "a",
+      "input": "a"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "numpy.prod",
+    "package": "numpy",
+    "module": "numpy",
+    "function": "prod",
+    "description": "Multiply all numeric values together to obtain their product.",
+    "semantic_group": "prod",
+    "parameters": [
+      {
+        "name": "a",
+        "description": "input numbers or array",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "axis along which to aggregate",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "keepdims",
+        "description": "retain reduced dimensions",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "prod",
+      "product",
+      "multiply all numbers"
+    ],
+    "parameter_aliases": {
+      "data": "a",
+      "values": "a",
+      "numbers": "a",
+      "array": "a",
+      "input": "a"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "numpy.quantile",
+    "package": "numpy",
+    "module": "numpy",
+    "function": "quantile",
+    "description": "Find a data quantile at a probability between zero and one.",
+    "semantic_group": "quantile",
+    "parameters": [
+      {
+        "name": "a",
+        "description": "input numeric data",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "q",
+        "description": "requested quantile or percentile",
+        "type_hint": "real_or_array",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "axis to reduce",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "method",
+        "description": "interpolation method",
+        "type_hint": "any",
+        "required": false,
+        "default": "linear",
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "quantile",
+      "data quantile"
+    ],
+    "parameter_aliases": {
+      "data": "a",
+      "values": "a",
+      "numbers": "a",
+      "array": "a",
+      "input": "a",
+      "probability": "q",
+      "percent": "q",
+      "level": "q"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "numpy.percentile",
+    "package": "numpy",
+    "module": "numpy",
+    "function": "percentile",
+    "description": "Find the value at a requested percentile from zero to one hundred.",
+    "semantic_group": "percentile",
+    "parameters": [
+      {
+        "name": "a",
+        "description": "input numeric data",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "q",
+        "description": "requested quantile or percentile",
+        "type_hint": "real_or_array",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "axis to reduce",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "method",
+        "description": "interpolation method",
+        "type_hint": "any",
+        "required": false,
+        "default": "linear",
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "percentile",
+      "data percentile"
+    ],
+    "parameter_aliases": {
+      "data": "a",
+      "values": "a",
+      "numbers": "a",
+      "array": "a",
+      "input": "a",
+      "probability": "q",
+      "percent": "q",
+      "level": "q"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "numpy.unique",
+    "package": "numpy",
+    "module": "numpy",
+    "function": "unique",
+    "description": "Find distinct unique values and remove duplicates from an array.",
+    "semantic_group": "unique",
+    "parameters": [
+      {
+        "name": "ar",
+        "description": "input data",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "return_counts",
+        "description": "also return occurrence counts",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "keyword_only"
+      },
+      {
+        "name": "axis",
+        "description": "axis for unique rows",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "unique",
+      "distinct values",
+      "remove duplicates"
+    ],
+    "parameter_aliases": {
+      "data": "ar",
+      "values": "ar",
+      "numbers": "ar",
+      "array": "ar",
+      "input": "ar"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "numpy.sort",
+    "package": "numpy",
+    "module": "numpy",
+    "function": "sort",
+    "description": "Sort numeric values or array elements in ascending order.",
+    "semantic_group": "sort",
+    "parameters": [
+      {
+        "name": "a",
+        "description": "array to sort",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "axis to sort",
+        "type_hint": "any",
+        "required": false,
+        "default": -1,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "kind",
+        "description": "sorting algorithm",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "sort",
+      "sort ascending"
+    ],
+    "parameter_aliases": {
+      "data": "a",
+      "values": "a",
+      "numbers": "a",
+      "array": "a",
+      "input": "a"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "numpy.dot",
+    "package": "numpy",
+    "module": "numpy",
+    "function": "dot",
+    "description": "Compute the dot product of vectors or matrix multiplication.",
+    "semantic_group": "dot",
+    "parameters": [
+      {
+        "name": "a",
+        "description": "left vector or matrix",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "b",
+        "description": "right vector or matrix",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "dot",
+      "dot product",
+      "matrix product"
+    ],
+    "parameter_aliases": {
+      "left": "a",
+      "right": "b",
+      "x": "a",
+      "y": "b"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "numpy.linalg.norm",
+    "package": "numpy",
+    "module": "numpy.linalg",
+    "function": "norm",
+    "description": "Calculate the length or magnitude of a vector, or a matrix norm.",
+    "semantic_group": "vector.norm",
+    "parameters": [
+      {
+        "name": "x",
+        "description": "vector or matrix",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "ord",
+        "description": "norm order",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "axis to evaluate",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "vector norm",
+      "vector length",
+      "magnitude"
+    ],
+    "parameter_aliases": {
+      "data": "x",
+      "values": "x",
+      "numbers": "x",
+      "array": "x",
+      "input": "x"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "numpy.random.normal",
+    "package": "numpy",
+    "module": "numpy.random",
+    "function": "normal",
+    "description": "Draw random samples from a normal Gaussian distribution with a specified mean and standard deviation.",
+    "semantic_group": "normal.samples",
+    "parameters": [
+      {
+        "name": "loc",
+        "description": "mean of the Gaussian",
+        "type_hint": "real",
+        "required": false,
+        "default": 0.0,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "scale",
+        "description": "standard deviation",
+        "type_hint": "real",
+        "required": false,
+        "default": 1.0,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "size",
+        "description": "number or shape of random samples",
+        "type_hint": "size",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "normal distribution",
+      "gaussian distribution",
+      "normal samples",
+      "random normal values",
+      "gaussian samples",
+      "gaussian random values"
+    ],
+    "parameter_aliases": {
+      "mean": "loc",
+      "mu": "loc",
+      "std": "scale",
+      "standard_deviation": "scale",
+      "sigma": "scale",
+      "samples": "size",
+      "count": "size"
+    },
+    "prior": 1.0,
+    "effect": "random"
+  },
+  {
+    "id": "numpy.random.uniform",
+    "package": "numpy",
+    "module": "numpy.random",
+    "function": "uniform",
+    "description": "Generate random real numbers uniformly distributed between lower and upper bounds.",
+    "semantic_group": "uniform.samples",
+    "parameters": [
+      {
+        "name": "low",
+        "description": "lower bound",
+        "type_hint": "real",
+        "required": false,
+        "default": 0.0,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "high",
+        "description": "upper bound",
+        "type_hint": "real",
+        "required": false,
+        "default": 1.0,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "size",
+        "description": "number or shape of random samples",
+        "type_hint": "size",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "uniform distribution",
+      "uniform random values",
+      "uniform samples"
+    ],
+    "parameter_aliases": {
+      "minimum": "low",
+      "maximum": "high",
+      "samples": "size",
+      "count": "size"
+    },
+    "prior": 1.0,
+    "effect": "random"
+  },
+  {
+    "id": "numpy.random.exponential",
+    "package": "numpy",
+    "module": "numpy.random",
+    "function": "exponential",
+    "description": "Draw random waiting times from an exponential probability distribution.",
+    "semantic_group": "exponential.samples",
+    "parameters": [
+      {
+        "name": "scale",
+        "description": "mean waiting time",
+        "type_hint": "real",
+        "required": false,
+        "default": 1.0,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "size",
+        "description": "number or shape of random samples",
+        "type_hint": "size",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "exponential distribution",
+      "exponential samples"
+    ],
+    "parameter_aliases": {
+      "mean": "scale",
+      "samples": "size",
+      "count": "size"
+    },
+    "prior": 1.0,
+    "effect": "random"
+  },
+  {
+    "id": "numpy.random.randint",
+    "package": "numpy",
+    "module": "numpy.random",
+    "function": "randint",
+    "description": "Generate random integers in a range with an exclusive upper bound.",
+    "semantic_group": "integer.samples",
+    "parameters": [
+      {
+        "name": "low",
+        "description": "inclusive lower bound",
+        "type_hint": "integer",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "high",
+        "description": "exclusive upper bound",
+        "type_hint": "integer",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "size",
+        "description": "number or shape of random integers",
+        "type_hint": "size",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "random integers",
+      "randint"
+    ],
+    "parameter_aliases": {
+      "minimum": "low",
+      "maximum": "high",
+      "samples": "size",
+      "count": "size"
+    },
+    "prior": 1.0,
+    "effect": "random"
+  },
+  {
+    "id": "scipy.stats.norm.pdf",
+    "package": "scipy",
+    "module": "scipy.stats",
+    "function": "norm.pdf",
+    "description": "Calculate the normal Gaussian probability density at a value. This is density, not cumulative probability.",
+    "semantic_group": "normal.pdf",
+    "parameters": [
+      {
+        "name": "x",
+        "description": "input value",
+        "type_hint": "real_or_array",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "loc",
+        "description": "distribution mean",
+        "type_hint": "real",
+        "required": false,
+        "default": 0.0,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "scale",
+        "description": "distribution standard deviation",
+        "type_hint": "real",
+        "required": false,
+        "default": 1.0,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "normal pdf",
+      "normal density",
+      "gaussian density"
+    ],
+    "parameter_aliases": {
+      "value": "x",
+      "values": "x",
+      "probability": "x",
+      "mean": "loc",
+      "std": "scale",
+      "sigma": "scale"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "scipy.stats.norm.cdf",
+    "package": "scipy",
+    "module": "scipy.stats",
+    "function": "norm.cdf",
+    "description": "Calculate normal Gaussian cumulative probability, the probability of a value being at or below x.",
+    "semantic_group": "normal.cdf",
+    "parameters": [
+      {
+        "name": "x",
+        "description": "input value",
+        "type_hint": "real_or_array",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "loc",
+        "description": "distribution mean",
+        "type_hint": "real",
+        "required": false,
+        "default": 0.0,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "scale",
+        "description": "distribution standard deviation",
+        "type_hint": "real",
+        "required": false,
+        "default": 1.0,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "normal cdf",
+      "normal cumulative probability",
+      "gaussian cdf"
+    ],
+    "parameter_aliases": {
+      "value": "x",
+      "values": "x",
+      "probability": "x",
+      "mean": "loc",
+      "std": "scale",
+      "sigma": "scale"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "scipy.stats.norm.ppf",
+    "package": "scipy",
+    "module": "scipy.stats",
+    "function": "norm.ppf",
+    "description": "Calculate the inverse normal cumulative distribution: a quantile or z score for a probability.",
+    "semantic_group": "normal.ppf",
+    "parameters": [
+      {
+        "name": "q",
+        "description": "probability between zero and one",
+        "type_hint": "real_or_array",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "loc",
+        "description": "distribution mean",
+        "type_hint": "real",
+        "required": false,
+        "default": 0.0,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "scale",
+        "description": "distribution standard deviation",
+        "type_hint": "real",
+        "required": false,
+        "default": 1.0,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "normal ppf",
+      "normal quantile",
+      "inverse normal cdf",
+      "probability to z score"
+    ],
+    "parameter_aliases": {
+      "value": "q",
+      "values": "q",
+      "probability": "q",
+      "mean": "loc",
+      "std": "scale",
+      "sigma": "scale"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "scipy.stats.norm.rvs",
+    "package": "scipy",
+    "module": "scipy.stats",
+    "function": "norm.rvs",
+    "description": "Draw Gaussian normal random samples, optionally with a reproducible random state.",
+    "semantic_group": "normal.samples",
+    "parameters": [
+      {
+        "name": "loc",
+        "description": "distribution mean",
+        "type_hint": "real",
+        "required": false,
+        "default": 0.0,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "scale",
+        "description": "distribution standard deviation",
+        "type_hint": "real",
+        "required": false,
+        "default": 1.0,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "size",
+        "description": "number of samples",
+        "type_hint": "size",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "random_state",
+        "description": "random generator seed",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "normal random samples with seed",
+      "gaussian random samples with seed"
+    ],
+    "parameter_aliases": {
+      "mean": "loc",
+      "mu": "loc",
+      "std": "scale",
+      "standard_deviation": "scale",
+      "sigma": "scale",
+      "samples": "size",
+      "count": "size",
+      "seed": "random_state"
+    },
+    "prior": 0.8,
+    "effect": "random"
+  },
+  {
+    "id": "scipy.stats.norm",
+    "package": "scipy",
+    "module": "scipy.stats",
+    "function": "norm",
+    "description": "Create a frozen normal Gaussian distribution object with fixed mean and standard deviation.",
+    "semantic_group": "normal.object",
+    "parameters": [
+      {
+        "name": "loc",
+        "description": "distribution mean",
+        "type_hint": "real",
+        "required": false,
+        "default": 0.0,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "scale",
+        "description": "distribution standard deviation",
+        "type_hint": "real",
+        "required": false,
+        "default": 1.0,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "normal distribution object",
+      "frozen normal distribution",
+      "gaussian distribution object",
+      "frozen gaussian distribution"
+    ],
+    "parameter_aliases": {
+      "mean": "loc",
+      "mu": "loc",
+      "std": "scale",
+      "sigma": "scale"
+    },
+    "prior": 0.75,
+    "effect": "compute"
+  },
+  {
+    "id": "scipy.stats.ttest_ind",
+    "package": "scipy",
+    "module": "scipy.stats",
+    "function": "ttest_ind",
+    "description": "Compare the means of two independent samples using a two sample t test; obtain a statistic and p value.",
+    "semantic_group": "test.independent",
+    "parameters": [
+      {
+        "name": "a",
+        "description": "first independent sample",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "b",
+        "description": "second independent sample",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "equal_var",
+        "description": "assume equal population variances",
+        "type_hint": "bool",
+        "required": false,
+        "default": true,
+        "kind": "keyword_only"
+      },
+      {
+        "name": "alternative",
+        "description": "two-sided or one-sided hypothesis",
+        "type_hint": "any",
+        "required": false,
+        "default": "two-sided",
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "independent t test",
+      "two sample t test"
+    ],
+    "parameter_aliases": {
+      "sample1": "a",
+      "sample2": "b",
+      "x": "a",
+      "y": "b"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "scipy.stats.pearsonr",
+    "package": "scipy",
+    "module": "scipy.stats",
+    "function": "pearsonr",
+    "description": "Compute the Pearson linear correlation coefficient and p value between two numeric variables.",
+    "semantic_group": "correlation.pearsonr",
+    "parameters": [
+      {
+        "name": "x",
+        "description": "first variable",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "y",
+        "description": "second variable",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "pearson correlation",
+      "linear correlation"
+    ],
+    "parameter_aliases": {
+      "left": "x",
+      "right": "y",
+      "x": "x",
+      "y": "y"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "scipy.stats.spearmanr",
+    "package": "scipy",
+    "module": "scipy.stats",
+    "function": "spearmanr",
+    "description": "Compute the Spearman rank correlation, a monotonic association between two variables.",
+    "semantic_group": "correlation.spearmanr",
+    "parameters": [
+      {
+        "name": "a",
+        "description": "first variable",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "b",
+        "description": "second variable",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "spearman correlation",
+      "rank correlation"
+    ],
+    "parameter_aliases": {
+      "left": "a",
+      "right": "b",
+      "x": "a",
+      "y": "b"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "scipy.stats.zscore",
+    "package": "scipy",
+    "module": "scipy.stats",
+    "function": "zscore",
+    "description": "Standardize observed numeric data to z scores by subtracting its mean and dividing by standard deviation.",
+    "semantic_group": "zscore",
+    "parameters": [
+      {
+        "name": "a",
+        "description": "observed data",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "axis to standardize",
+        "type_hint": "any",
+        "required": false,
+        "default": 0,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "ddof",
+        "description": "degrees of freedom correction",
+        "type_hint": "integer",
+        "required": false,
+        "default": 0,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "z scores",
+      "standardize observed values"
+    ],
+    "parameter_aliases": {
+      "data": "a",
+      "values": "a",
+      "numbers": "a",
+      "array": "a",
+      "input": "a"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "statistics.mean",
+    "package": "statistics",
+    "module": "statistics",
+    "function": "mean",
+    "description": "Calculate the arithmetic average of a Python sequence of numbers.",
+    "semantic_group": "mean",
+    "parameters": [
+      {
+        "name": "data",
+        "description": "sequence of numbers",
+        "type_hint": "iterable",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "mean",
+      "arithmetic mean"
+    ],
+    "parameter_aliases": {
+      "data": "data",
+      "values": "data",
+      "numbers": "data",
+      "array": "data",
+      "input": "data"
+    },
+    "prior": 0.65,
+    "effect": "compute"
+  },
+  {
+    "id": "statistics.median",
+    "package": "statistics",
+    "module": "statistics",
+    "function": "median",
+    "description": "Calculate the middle value of a Python sequence of numbers.",
+    "semantic_group": "median",
+    "parameters": [
+      {
+        "name": "data",
+        "description": "sequence of numbers",
+        "type_hint": "iterable",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "median",
+      "middle value"
+    ],
+    "parameter_aliases": {
+      "data": "data",
+      "values": "data",
+      "numbers": "data",
+      "array": "data",
+      "input": "data"
+    },
+    "prior": 0.65,
+    "effect": "compute"
+  },
+  {
+    "id": "statistics.stdev",
+    "package": "statistics",
+    "module": "statistics",
+    "function": "stdev",
+    "description": "Calculate sample standard deviation using an n minus one denominator.",
+    "semantic_group": "deviation.sample",
+    "parameters": [
+      {
+        "name": "data",
+        "description": "sequence of numbers",
+        "type_hint": "iterable",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "sample standard deviation",
+      "sample stdev"
+    ],
+    "parameter_aliases": {
+      "data": "data",
+      "values": "data",
+      "numbers": "data",
+      "array": "data",
+      "input": "data"
+    },
+    "prior": 0.65,
+    "effect": "compute"
+  },
+  {
+    "id": "statistics.variance",
+    "package": "statistics",
+    "module": "statistics",
+    "function": "variance",
+    "description": "Calculate unbiased sample variance using an n minus one denominator.",
+    "semantic_group": "variance.sample",
+    "parameters": [
+      {
+        "name": "data",
+        "description": "sequence of numbers",
+        "type_hint": "iterable",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "sample variance",
+      "unbiased variance"
+    ],
+    "parameter_aliases": {
+      "data": "data",
+      "values": "data",
+      "numbers": "data",
+      "array": "data",
+      "input": "data"
+    },
+    "prior": 0.65,
+    "effect": "compute"
+  },
+  {
+    "id": "sklearn.decomposition.PCA",
+    "package": "sklearn",
+    "module": "sklearn.decomposition",
+    "function": "PCA",
+    "description": "Create a principal component analysis estimator to reduce dimensionality by projecting features onto fewer components. Call fit_transform on data.",
+    "semantic_group": "pca",
+    "parameters": [
+      {
+        "name": "n_components",
+        "description": "number of components or retained variance",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "whiten",
+        "description": "whiten output components",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "keyword_only"
+      },
+      {
+        "name": "random_state",
+        "description": "random generator seed",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "pca",
+      "principal component analysis",
+      "reduce dimensionality"
+    ],
+    "parameter_aliases": {
+      "components": "n_components",
+      "dimensions": "n_components",
+      "seed": "random_state"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "sklearn.cluster.KMeans",
+    "package": "sklearn",
+    "module": "sklearn.cluster",
+    "function": "KMeans",
+    "description": "Create a K means estimator to partition observations into a chosen number of clusters. Call fit or fit_predict on data.",
+    "semantic_group": "kmeans",
+    "parameters": [
+      {
+        "name": "n_clusters",
+        "description": "number of clusters",
+        "type_hint": "integer",
+        "required": false,
+        "default": 8,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "random_state",
+        "description": "random generator seed",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "keyword_only"
+      },
+      {
+        "name": "n_init",
+        "description": "initialization attempts",
+        "type_hint": "any",
+        "required": false,
+        "default": "auto",
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "kmeans",
+      "k means",
+      "cluster observations"
+    ],
+    "parameter_aliases": {
+      "clusters": "n_clusters",
+      "groups": "n_clusters",
+      "seed": "random_state"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "sklearn.linear_model.LinearRegression",
+    "package": "sklearn",
+    "module": "sklearn.linear_model",
+    "function": "LinearRegression",
+    "description": "Create an ordinary least squares linear regression estimator to predict a continuous numeric outcome. Call fit on features and targets.",
+    "semantic_group": "linear.regression",
+    "parameters": [
+      {
+        "name": "fit_intercept",
+        "description": "include intercept",
+        "type_hint": "bool",
+        "required": false,
+        "default": true,
+        "kind": "keyword_only"
+      },
+      {
+        "name": "positive",
+        "description": "constrain coefficients positive",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "linear regression",
+      "least squares regression"
+    ],
+    "parameter_aliases": {
+      "intercept": "fit_intercept"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "sklearn.linear_model.LogisticRegression",
+    "package": "sklearn",
+    "module": "sklearn.linear_model",
+    "function": "LogisticRegression",
+    "description": "Create a logistic regression classifier for categorical or binary outcomes. Call fit on features and labels.",
+    "semantic_group": "logistic.regression",
+    "parameters": [
+      {
+        "name": "C",
+        "description": "inverse regularization strength",
+        "type_hint": "real",
+        "required": false,
+        "default": 1.0,
+        "kind": "keyword_only"
+      },
+      {
+        "name": "max_iter",
+        "description": "maximum solver iterations",
+        "type_hint": "integer",
+        "required": false,
+        "default": 100,
+        "kind": "keyword_only"
+      },
+      {
+        "name": "random_state",
+        "description": "random generator seed",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "logistic regression",
+      "logistic classifier"
+    ],
+    "parameter_aliases": {
+      "iterations": "max_iter",
+      "seed": "random_state"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "sklearn.preprocessing.StandardScaler",
+    "package": "sklearn",
+    "module": "sklearn.preprocessing",
+    "function": "StandardScaler",
+    "description": "Create a feature scaler estimator that centers each feature and scales it to unit standard deviation. Call fit_transform on training data.",
+    "semantic_group": "scaler.standard",
+    "parameters": [
+      {
+        "name": "with_mean",
+        "description": "center features",
+        "type_hint": "bool",
+        "required": false,
+        "default": true,
+        "kind": "keyword_only"
+      },
+      {
+        "name": "with_std",
+        "description": "scale to unit variance",
+        "type_hint": "bool",
+        "required": false,
+        "default": true,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "standard scaler",
+      "standardize features",
+      "unit variance feature scaler"
+    ],
+    "parameter_aliases": {
+      "center": "with_mean",
+      "scale": "with_std"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "sklearn.preprocessing.MinMaxScaler",
+    "package": "sklearn",
+    "module": "sklearn.preprocessing",
+    "function": "MinMaxScaler",
+    "description": "Create an estimator that rescales features to a bounded interval, usually zero to one. Call fit_transform on data.",
+    "semantic_group": "scaler.minmax",
+    "parameters": [
+      {
+        "name": "feature_range",
+        "description": "target interval",
+        "type_hint": "any",
+        "required": false,
+        "default": [
+          0,
+          1
+        ],
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "clip",
+        "description": "clip transformed values to range",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "min max scaler",
+      "minmax scaler",
+      "scale features to range"
+    ],
+    "parameter_aliases": {
+      "range": "feature_range"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "sklearn.metrics.mean_squared_error",
+    "package": "sklearn",
+    "module": "sklearn.metrics",
+    "function": "mean_squared_error",
+    "description": "Measure regression error as the average squared difference between true values and predictions.",
+    "semantic_group": "mse",
+    "parameters": [
+      {
+        "name": "y_true",
+        "description": "actual target values",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "y_pred",
+        "description": "predicted target values",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "mean squared error",
+      "mse"
+    ],
+    "parameter_aliases": {
+      "actual": "y_true",
+      "predicted": "y_pred",
+      "truth": "y_true",
+      "predictions": "y_pred"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "sklearn.metrics.accuracy_score",
+    "package": "sklearn",
+    "module": "sklearn.metrics",
+    "function": "accuracy_score",
+    "description": "Measure classification accuracy as the fraction of predicted labels equal to their true labels.",
+    "semantic_group": "accuracy",
+    "parameters": [
+      {
+        "name": "y_true",
+        "description": "actual class labels",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "y_pred",
+        "description": "predicted class labels",
+        "type_hint": "array_like",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "normalize",
+        "description": "return proportion instead of count",
+        "type_hint": "bool",
+        "required": false,
+        "default": true,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "classification accuracy",
+      "accuracy"
+    ],
+    "parameter_aliases": {
+      "actual": "y_true",
+      "predicted": "y_pred",
+      "labels": "y_true",
+      "predictions": "y_pred"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "pandas.Series.mean",
+    "package": "pandas",
+    "module": "pandas",
+    "function": "Series.mean",
+    "description": "Calculate the arithmetic average of a pandas Series, optionally skipping missing values.",
+    "semantic_group": "mean",
+    "parameters": [
+      {
+        "name": "self",
+        "description": "pandas Series",
+        "type_hint": "series",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "axis to aggregate",
+        "type_hint": "any",
+        "required": false,
+        "default": 0,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "skipna",
+        "description": "ignore missing values",
+        "type_hint": "bool",
+        "required": false,
+        "default": true,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "numeric_only",
+        "description": "restrict to numbers",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "mean",
+      "series mean"
+    ],
+    "parameter_aliases": {
+      "data": "self",
+      "values": "self",
+      "numbers": "self",
+      "array": "self",
+      "input": "self",
+      "series": "self"
+    },
+    "prior": 0.8,
+    "effect": "compute"
+  },
+  {
+    "id": "pandas.Series.median",
+    "package": "pandas",
+    "module": "pandas",
+    "function": "Series.median",
+    "description": "Calculate the middle value of a pandas Series, optionally skipping missing values.",
+    "semantic_group": "median",
+    "parameters": [
+      {
+        "name": "self",
+        "description": "pandas Series",
+        "type_hint": "series",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "axis to aggregate",
+        "type_hint": "any",
+        "required": false,
+        "default": 0,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "skipna",
+        "description": "ignore missing values",
+        "type_hint": "bool",
+        "required": false,
+        "default": true,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "numeric_only",
+        "description": "restrict to numbers",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "positional_or_keyword"
+      }
+    ],
+    "aliases": [
+      "median",
+      "series median"
+    ],
+    "parameter_aliases": {
+      "data": "self",
+      "values": "self",
+      "numbers": "self",
+      "array": "self",
+      "input": "self",
+      "series": "self"
+    },
+    "prior": 0.8,
+    "effect": "compute"
+  },
+  {
+    "id": "pandas.read_csv",
+    "package": "pandas",
+    "module": "pandas",
+    "function": "read_csv",
+    "description": "Read a comma separated values CSV file from a local path or file object into a pandas DataFrame.",
+    "semantic_group": "csv.read",
+    "parameters": [
+      {
+        "name": "filepath_or_buffer",
+        "description": "local file path or readable file object",
+        "type_hint": "path",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "sep",
+        "description": "column delimiter",
+        "type_hint": "any",
+        "required": false,
+        "default": ",",
+        "kind": "keyword_only"
+      },
+      {
+        "name": "header",
+        "description": "row containing column names",
+        "type_hint": "any",
+        "required": false,
+        "default": "infer",
+        "kind": "keyword_only"
+      },
+      {
+        "name": "encoding",
+        "description": "text encoding",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "keyword_only"
+      },
+      {
+        "name": "nrows",
+        "description": "maximum rows to read",
+        "type_hint": "integer",
+        "required": false,
+        "default": null,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "read csv",
+      "load csv",
+      "read comma separated file"
+    ],
+    "parameter_aliases": {
+      "path": "filepath_or_buffer",
+      "file": "filepath_or_buffer",
+      "filename": "filepath_or_buffer",
+      "delimiter": "sep",
+      "rows": "nrows"
+    },
+    "prior": 1.0,
+    "effect": "local_read"
+  },
+  {
+    "id": "pandas.concat",
+    "package": "pandas",
+    "module": "pandas",
+    "function": "concat",
+    "description": "Concatenate pandas DataFrames or Series by stacking rows or joining columns.",
+    "semantic_group": "concat",
+    "parameters": [
+      {
+        "name": "objs",
+        "description": "list or mapping of pandas objects",
+        "type_hint": "mapping_or_sequence",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "axis",
+        "description": "stack rows or columns",
+        "type_hint": "any",
+        "required": false,
+        "default": 0,
+        "kind": "keyword_only"
+      },
+      {
+        "name": "ignore_index",
+        "description": "reset the result index",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "concat",
+      "concatenate dataframes",
+      "stack dataframes"
+    ],
+    "parameter_aliases": {
+      "frames": "objs",
+      "tables": "objs",
+      "data": "objs"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  },
+  {
+    "id": "pandas.to_datetime",
+    "package": "pandas",
+    "module": "pandas",
+    "function": "to_datetime",
+    "description": "Convert date strings or numeric timestamps into pandas datetime values.",
+    "semantic_group": "datetime.parse",
+    "parameters": [
+      {
+        "name": "arg",
+        "description": "dates to parse",
+        "type_hint": "any",
+        "required": true,
+        "default": null,
+        "kind": "positional_or_keyword"
+      },
+      {
+        "name": "format",
+        "description": "date format string",
+        "type_hint": "any",
+        "required": false,
+        "default": null,
+        "kind": "keyword_only"
+      },
+      {
+        "name": "errors",
+        "description": "raise or coerce invalid dates",
+        "type_hint": "any",
+        "required": false,
+        "default": "raise",
+        "kind": "keyword_only"
+      },
+      {
+        "name": "utc",
+        "description": "normalize to UTC",
+        "type_hint": "bool",
+        "required": false,
+        "default": false,
+        "kind": "keyword_only"
+      }
+    ],
+    "aliases": [
+      "parse dates",
+      "to datetime",
+      "convert dates"
+    ],
+    "parameter_aliases": {
+      "data": "arg",
+      "values": "arg",
+      "dates": "arg"
+    },
+    "prior": 1.0,
+    "effect": "compute"
+  }
+]

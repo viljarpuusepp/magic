@@ -1,0 +1,916 @@
+{
+  "case_count": 46,
+  "top_1_accuracy": 1.0,
+  "top_3_accuracy": 1.0,
+  "top_5_accuracy": 1.0,
+  "semantic_top_1_accuracy": 0.8913043478260869,
+  "semantic_top_3_accuracy": 0.9782608695652174,
+  "semantic_top_5_accuracy": 1.0,
+  "argument_mapping_cases": 7,
+  "argument_mapping_accuracy": 1.0,
+  "latency_ms": {
+    "mean": 14.909,
+    "median": 14.63,
+    "p95": 19.798
+  },
+  "warmup_seconds": 4.871,
+  "latency_scope": "warm CPU model, vector index and target imports; first resolution per intent",
+  "registry_count": 44,
+  "registry_fingerprint": "6af1be96c067bdcf554d89bf6c64352a17ef840b7c3cef75665b8306f2ac9b21",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "encoder_identity": "fa908af45e59b60e438be77bf92b317398d2d4cd3946a3f5478cb82bc567ed39",
+  "python": "3.12.14",
+  "dependencies": {
+    "sentence-transformers": "5.1.1",
+    "transformers": "4.56.2",
+    "torch": "2.8.0+cpu",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.9.1"
+  },
+  "cases": [
+    {
+      "intent": "average of these numbers",
+      "expected_function": "numpy.mean",
+      "selected_function": "numpy.mean",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.mean",
+        "statistics.mean",
+        "pandas.Series.mean"
+      ],
+      "semantic_top5": [
+        "statistics.mean",
+        "pandas.Series.mean",
+        "statistics.median",
+        "numpy.mean",
+        "numpy.median"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 19.776
+    },
+    {
+      "intent": "find the central value of sorted observations",
+      "expected_function": "numpy.median",
+      "selected_function": "numpy.median",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.median",
+        "statistics.median",
+        "numpy.sort",
+        "pandas.Series.median",
+        "numpy.mean"
+      ],
+      "semantic_top5": [
+        "numpy.median",
+        "statistics.median",
+        "numpy.sort",
+        "pandas.Series.median",
+        "statistics.mean"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 21.575
+    },
+    {
+      "intent": "compute population standard deviation",
+      "expected_function": "numpy.std",
+      "selected_function": "numpy.std",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.std"
+      ],
+      "semantic_top5": [
+        "statistics.stdev",
+        "numpy.std",
+        "numpy.var",
+        "statistics.variance",
+        "scipy.stats.zscore"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 19.83
+    },
+    {
+      "intent": "measure the population variance",
+      "expected_function": "numpy.var",
+      "selected_function": "numpy.var",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.var"
+      ],
+      "semantic_top5": [
+        "statistics.variance",
+        "numpy.var",
+        "numpy.std",
+        "statistics.stdev",
+        "scipy.stats.ttest_ind"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 15.224
+    },
+    {
+      "intent": "add together all the values",
+      "expected_function": "numpy.sum",
+      "selected_function": "numpy.sum",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.sum",
+        "numpy.prod",
+        "numpy.mean"
+      ],
+      "semantic_top5": [
+        "numpy.sum",
+        "numpy.prod",
+        "numpy.mean",
+        "statistics.mean",
+        "pandas.Series.mean"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 14.879
+    },
+    {
+      "intent": "return the least element of an array",
+      "expected_function": "numpy.min",
+      "selected_function": "numpy.min",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.min"
+      ],
+      "semantic_top5": [
+        "numpy.min",
+        "numpy.max",
+        "numpy.sort",
+        "numpy.unique",
+        "numpy.random.randint"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 18.023
+    },
+    {
+      "intent": "find the greatest element",
+      "expected_function": "numpy.max",
+      "selected_function": "numpy.max",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.max"
+      ],
+      "semantic_top5": [
+        "numpy.max",
+        "numpy.min",
+        "numpy.median",
+        "numpy.sort",
+        "statistics.median"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 14.88
+    },
+    {
+      "intent": "multiply every number together",
+      "expected_function": "numpy.prod",
+      "selected_function": "numpy.prod",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.prod",
+        "statistics.mean"
+      ],
+      "semantic_top5": [
+        "numpy.prod",
+        "statistics.mean",
+        "numpy.mean",
+        "numpy.sum",
+        "pandas.Series.mean"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 13.993
+    },
+    {
+      "intent": "compute a quantile of the data",
+      "expected_function": "numpy.quantile",
+      "selected_function": "numpy.quantile",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.quantile"
+      ],
+      "semantic_top5": [
+        "numpy.quantile",
+        "numpy.percentile",
+        "scipy.stats.norm.ppf",
+        "scipy.stats.norm.cdf",
+        "numpy.median"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 12.747
+    },
+    {
+      "intent": "find the 90th percentile of observations",
+      "expected_function": "numpy.percentile",
+      "selected_function": "numpy.percentile",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.percentile",
+        "numpy.quantile",
+        "numpy.median",
+        "scipy.stats.norm.ppf",
+        "scipy.stats.norm.cdf"
+      ],
+      "semantic_top5": [
+        "numpy.percentile",
+        "numpy.quantile",
+        "numpy.median",
+        "scipy.stats.norm.ppf",
+        "scipy.stats.norm.cdf"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 11.779
+    },
+    {
+      "intent": "deduplicate the values in an array",
+      "expected_function": "numpy.unique",
+      "selected_function": "numpy.unique",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.unique"
+      ],
+      "semantic_top5": [
+        "numpy.unique",
+        "numpy.prod",
+        "numpy.sum",
+        "numpy.min",
+        "numpy.max"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 15.449
+    },
+    {
+      "intent": "put values into ascending order",
+      "expected_function": "numpy.sort",
+      "selected_function": "numpy.sort",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.sort",
+        "numpy.max",
+        "numpy.median",
+        "numpy.min",
+        "statistics.median"
+      ],
+      "semantic_top5": [
+        "numpy.sort",
+        "numpy.max",
+        "numpy.median",
+        "numpy.min",
+        "statistics.median"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 13.914
+    },
+    {
+      "intent": "take the dot product of two vectors",
+      "expected_function": "numpy.dot",
+      "selected_function": "numpy.dot",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.dot"
+      ],
+      "semantic_top5": [
+        "numpy.dot",
+        "numpy.prod",
+        "numpy.linalg.norm",
+        "numpy.std",
+        "numpy.mean"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 16.392
+    },
+    {
+      "intent": "measure the length of a vector",
+      "expected_function": "numpy.linalg.norm",
+      "selected_function": "numpy.linalg.norm",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.linalg.norm"
+      ],
+      "semantic_top5": [
+        "numpy.linalg.norm",
+        "numpy.dot",
+        "numpy.min",
+        "numpy.max",
+        "numpy.std"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 14.382
+    },
+    {
+      "intent": "generate Gaussian random values",
+      "expected_function": "numpy.random.normal",
+      "selected_function": "numpy.random.normal",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.random.normal",
+        "scipy.stats.norm.rvs"
+      ],
+      "semantic_top5": [
+        "scipy.stats.norm.rvs",
+        "numpy.random.normal",
+        "scipy.stats.norm",
+        "numpy.random.randint",
+        "numpy.random.uniform"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 12.818
+    },
+    {
+      "intent": "draw uniformly distributed random samples",
+      "expected_function": "numpy.random.uniform",
+      "selected_function": "numpy.random.uniform",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.random.uniform",
+        "scipy.stats.norm.rvs",
+        "numpy.random.normal",
+        "numpy.random.exponential",
+        "numpy.random.randint"
+      ],
+      "semantic_top5": [
+        "numpy.random.uniform",
+        "scipy.stats.norm.rvs",
+        "numpy.random.normal",
+        "numpy.random.exponential",
+        "numpy.random.randint"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 14.803
+    },
+    {
+      "intent": "sample exponentially distributed waiting times",
+      "expected_function": "numpy.random.exponential",
+      "selected_function": "numpy.random.exponential",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.random.exponential"
+      ],
+      "semantic_top5": [
+        "numpy.random.exponential",
+        "numpy.random.uniform",
+        "scipy.stats.norm.rvs",
+        "statistics.mean",
+        "scipy.stats.norm"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 13.518
+    },
+    {
+      "intent": "draw random integer values within bounds",
+      "expected_function": "numpy.random.randint",
+      "selected_function": "numpy.random.randint",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.random.randint",
+        "numpy.random.uniform",
+        "numpy.random.normal",
+        "numpy.random.exponential",
+        "scipy.stats.norm.rvs"
+      ],
+      "semantic_top5": [
+        "numpy.random.randint",
+        "numpy.random.uniform",
+        "numpy.random.normal",
+        "scipy.stats.norm.rvs",
+        "numpy.random.exponential"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 16.326
+    },
+    {
+      "intent": "evaluate Gaussian probability density",
+      "expected_function": "scipy.stats.norm.pdf",
+      "selected_function": "scipy.stats.norm.pdf",
+      "status": "resolved",
+      "ranked_top5": [
+        "scipy.stats.norm.pdf"
+      ],
+      "semantic_top5": [
+        "scipy.stats.norm.pdf",
+        "scipy.stats.norm.cdf",
+        "scipy.stats.norm.rvs",
+        "scipy.stats.norm",
+        "scipy.stats.norm.ppf"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 14.715
+    },
+    {
+      "intent": "normal cumulative probability",
+      "expected_function": "scipy.stats.norm.cdf",
+      "selected_function": "scipy.stats.norm.cdf",
+      "status": "resolved",
+      "ranked_top5": [
+        "scipy.stats.norm.cdf"
+      ],
+      "semantic_top5": [
+        "scipy.stats.norm.cdf",
+        "scipy.stats.norm.ppf",
+        "scipy.stats.norm.pdf",
+        "scipy.stats.norm.rvs",
+        "numpy.random.normal"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 13.099
+    },
+    {
+      "intent": "convert a Gaussian probability into a z score",
+      "expected_function": "scipy.stats.norm.ppf",
+      "selected_function": "scipy.stats.norm.ppf",
+      "status": "resolved",
+      "ranked_top5": [
+        "scipy.stats.norm.ppf"
+      ],
+      "semantic_top5": [
+        "scipy.stats.norm.ppf",
+        "scipy.stats.zscore",
+        "scipy.stats.norm.pdf",
+        "scipy.stats.norm.cdf",
+        "scipy.stats.norm.rvs"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 15.009
+    },
+    {
+      "intent": "create a frozen Gaussian distribution object",
+      "expected_function": "scipy.stats.norm",
+      "selected_function": "scipy.stats.norm",
+      "status": "resolved",
+      "ranked_top5": [
+        "scipy.stats.norm"
+      ],
+      "semantic_top5": [
+        "scipy.stats.norm",
+        "scipy.stats.norm.rvs",
+        "numpy.random.exponential",
+        "scipy.stats.norm.pdf",
+        "numpy.random.normal"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 12.981
+    },
+    {
+      "intent": "test whether two independent groups have different means",
+      "expected_function": "scipy.stats.ttest_ind",
+      "selected_function": "scipy.stats.ttest_ind",
+      "status": "resolved",
+      "ranked_top5": [
+        "scipy.stats.ttest_ind"
+      ],
+      "semantic_top5": [
+        "scipy.stats.ttest_ind",
+        "numpy.unique",
+        "statistics.mean",
+        "pandas.Series.mean",
+        "numpy.mean"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 12.519
+    },
+    {
+      "intent": "measure linear correlation between variables",
+      "expected_function": "scipy.stats.pearsonr",
+      "selected_function": "scipy.stats.pearsonr",
+      "status": "resolved",
+      "ranked_top5": [
+        "scipy.stats.pearsonr"
+      ],
+      "semantic_top5": [
+        "scipy.stats.pearsonr",
+        "scipy.stats.spearmanr",
+        "sklearn.linear_model.LinearRegression",
+        "scipy.stats.zscore",
+        "numpy.var"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 13.407
+    },
+    {
+      "intent": "measure rank correlation between variables",
+      "expected_function": "scipy.stats.spearmanr",
+      "selected_function": "scipy.stats.spearmanr",
+      "status": "resolved",
+      "ranked_top5": [
+        "scipy.stats.spearmanr"
+      ],
+      "semantic_top5": [
+        "scipy.stats.spearmanr",
+        "scipy.stats.pearsonr",
+        "scipy.stats.zscore",
+        "numpy.median",
+        "numpy.max"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 14.423
+    },
+    {
+      "intent": "convert observations into z scores",
+      "expected_function": "scipy.stats.zscore",
+      "selected_function": "scipy.stats.zscore",
+      "status": "resolved",
+      "ranked_top5": [
+        "scipy.stats.zscore"
+      ],
+      "semantic_top5": [
+        "scipy.stats.zscore",
+        "scipy.stats.norm.ppf",
+        "statistics.stdev",
+        "numpy.std",
+        "numpy.var"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 14.9
+    },
+    {
+      "intent": "sample standard deviation",
+      "expected_function": "statistics.stdev",
+      "selected_function": "statistics.stdev",
+      "status": "resolved",
+      "ranked_top5": [
+        "statistics.stdev"
+      ],
+      "semantic_top5": [
+        "statistics.stdev",
+        "statistics.variance",
+        "numpy.std",
+        "numpy.random.normal",
+        "numpy.var"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 14.119
+    },
+    {
+      "intent": "unbiased sample variance",
+      "expected_function": "statistics.variance",
+      "selected_function": "statistics.variance",
+      "status": "resolved",
+      "ranked_top5": [
+        "statistics.variance"
+      ],
+      "semantic_top5": [
+        "statistics.variance",
+        "numpy.var",
+        "numpy.std",
+        "statistics.stdev",
+        "scipy.stats.ttest_ind"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 14.757
+    },
+    {
+      "intent": "reduce dimensions using PCA",
+      "expected_function": "sklearn.decomposition.PCA",
+      "selected_function": "sklearn.decomposition.PCA",
+      "status": "resolved",
+      "ranked_top5": [
+        "sklearn.decomposition.PCA"
+      ],
+      "semantic_top5": [
+        "sklearn.decomposition.PCA",
+        "numpy.min",
+        "numpy.prod",
+        "sklearn.preprocessing.StandardScaler",
+        "numpy.std"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 12.376
+    },
+    {
+      "intent": "group observations into clusters",
+      "expected_function": "sklearn.cluster.KMeans",
+      "selected_function": "sklearn.cluster.KMeans",
+      "status": "resolved",
+      "ranked_top5": [
+        "sklearn.cluster.KMeans"
+      ],
+      "semantic_top5": [
+        "sklearn.cluster.KMeans",
+        "scipy.stats.zscore",
+        "numpy.median",
+        "numpy.var",
+        "numpy.mean"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 14.545
+    },
+    {
+      "intent": "fit an ordinary least squares linear regression",
+      "expected_function": "sklearn.linear_model.LinearRegression",
+      "selected_function": "sklearn.linear_model.LinearRegression",
+      "status": "resolved",
+      "ranked_top5": [
+        "sklearn.linear_model.LinearRegression"
+      ],
+      "semantic_top5": [
+        "sklearn.linear_model.LinearRegression",
+        "sklearn.metrics.mean_squared_error",
+        "sklearn.linear_model.LogisticRegression",
+        "scipy.stats.pearsonr",
+        "scipy.stats.zscore"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 13.665
+    },
+    {
+      "intent": "predict binary class labels using logistic regression",
+      "expected_function": "sklearn.linear_model.LogisticRegression",
+      "selected_function": "sklearn.linear_model.LogisticRegression",
+      "status": "resolved",
+      "ranked_top5": [
+        "sklearn.linear_model.LogisticRegression"
+      ],
+      "semantic_top5": [
+        "sklearn.linear_model.LogisticRegression",
+        "sklearn.metrics.accuracy_score",
+        "sklearn.linear_model.LinearRegression",
+        "sklearn.metrics.mean_squared_error",
+        "sklearn.cluster.KMeans"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 14.821
+    },
+    {
+      "intent": "create a reusable standard feature scaler",
+      "expected_function": "sklearn.preprocessing.StandardScaler",
+      "selected_function": "sklearn.preprocessing.StandardScaler",
+      "status": "resolved",
+      "ranked_top5": [
+        "sklearn.preprocessing.StandardScaler"
+      ],
+      "semantic_top5": [
+        "sklearn.preprocessing.StandardScaler",
+        "sklearn.preprocessing.MinMaxScaler",
+        "sklearn.decomposition.PCA",
+        "scipy.stats.zscore",
+        "sklearn.linear_model.LinearRegression"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 16.443
+    },
+    {
+      "intent": "rescale features into a zero to one interval",
+      "expected_function": "sklearn.preprocessing.MinMaxScaler",
+      "selected_function": "sklearn.preprocessing.MinMaxScaler",
+      "status": "resolved",
+      "ranked_top5": [
+        "sklearn.preprocessing.MinMaxScaler",
+        "sklearn.preprocessing.StandardScaler",
+        "numpy.min"
+      ],
+      "semantic_top5": [
+        "sklearn.preprocessing.MinMaxScaler",
+        "sklearn.preprocessing.StandardScaler",
+        "numpy.min",
+        "numpy.prod",
+        "numpy.quantile"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 14.151
+    },
+    {
+      "intent": "average squared prediction residuals",
+      "expected_function": "sklearn.metrics.mean_squared_error",
+      "selected_function": "sklearn.metrics.mean_squared_error",
+      "status": "resolved",
+      "ranked_top5": [
+        "sklearn.metrics.mean_squared_error",
+        "sklearn.linear_model.LinearRegression"
+      ],
+      "semantic_top5": [
+        "sklearn.metrics.mean_squared_error",
+        "sklearn.linear_model.LinearRegression",
+        "numpy.var",
+        "sklearn.cluster.KMeans",
+        "sklearn.preprocessing.StandardScaler"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 13.146
+    },
+    {
+      "intent": "fraction of predicted classes that are correct",
+      "expected_function": "sklearn.metrics.accuracy_score",
+      "selected_function": "sklearn.metrics.accuracy_score",
+      "status": "resolved",
+      "ranked_top5": [
+        "sklearn.metrics.accuracy_score"
+      ],
+      "semantic_top5": [
+        "sklearn.metrics.accuracy_score",
+        "sklearn.linear_model.LogisticRegression",
+        "sklearn.metrics.mean_squared_error",
+        "statistics.mean",
+        "statistics.median"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 16.053
+    },
+    {
+      "intent": "load a local CSV into a data table",
+      "expected_function": "pandas.read_csv",
+      "selected_function": "pandas.read_csv",
+      "status": "resolved",
+      "ranked_top5": [
+        "pandas.read_csv"
+      ],
+      "semantic_top5": [
+        "pandas.read_csv",
+        "pandas.concat",
+        "statistics.stdev",
+        "scipy.stats.zscore",
+        "scipy.stats.norm.cdf"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 16.364
+    },
+    {
+      "intent": "append dataframe rows into one combined table",
+      "expected_function": "pandas.concat",
+      "selected_function": "pandas.concat",
+      "status": "resolved",
+      "ranked_top5": [
+        "pandas.concat"
+      ],
+      "semantic_top5": [
+        "pandas.concat",
+        "pandas.read_csv",
+        "pandas.Series.mean",
+        "numpy.sum",
+        "pandas.Series.median"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 14.908
+    },
+    {
+      "intent": "turn date strings into datetime values",
+      "expected_function": "pandas.to_datetime",
+      "selected_function": "pandas.to_datetime",
+      "status": "resolved",
+      "ranked_top5": [
+        "pandas.to_datetime"
+      ],
+      "semantic_top5": [
+        "pandas.to_datetime",
+        "scipy.stats.zscore",
+        "sklearn.preprocessing.StandardScaler",
+        "pandas.concat",
+        "pandas.read_csv"
+      ],
+      "argument_mapping": {},
+      "latency_ms": 12.914
+    },
+    {
+      "intent": "draw random normal samples",
+      "expected_function": "numpy.random.normal",
+      "selected_function": "numpy.random.normal",
+      "status": "resolved",
+      "ranked_top5": [
+        "numpy.random.normal",
+        "scipy.stats.norm.rvs"
+      ],
+      "semantic_top5": [
+        "scipy.stats.norm.rvs",
+        "numpy.random.normal",
+        "numpy.random.exponential",
+        "numpy.random.uniform",
+        "numpy.random.randint"
+      ],
+      "argument_mapping": {
+        "mean": "loc",
+        "std": "scale",
+        "samples": "size"
+      },
+      "latency_ms": 14.051
+    },
+    {
+      "intent": "calculate cumulative normal probability",
+      "expected_function": "scipy.stats.norm.cdf",
+      "selected_function": "scipy.stats.norm.cdf",
+      "status": "resolved",
+      "ranked_top5": [
+        "scipy.stats.norm.cdf"
+      ],
+      "semantic_top5": [
+        "scipy.stats.norm.cdf",
+        "scipy.stats.norm.ppf",
+        "scipy.stats.norm.pdf",
+        "scipy.stats.norm.rvs",
+        "scipy.stats.norm"
+      ],
+      "argument_mapping": {
+        "value": "x"
+      },
+      "latency_ms": 11.916
+    },
+    {
+      "intent": "reduce dimensionality using principal components",
+      "expected_function": "sklearn.decomposition.PCA",
+      "selected_function": "sklearn.decomposition.PCA",
+      "status": "resolved",
+      "ranked_top5": [
+        "sklearn.decomposition.PCA"
+      ],
+      "semantic_top5": [
+        "sklearn.decomposition.PCA",
+        "numpy.prod",
+        "numpy.min",
+        "numpy.std",
+        "sklearn.preprocessing.StandardScaler"
+      ],
+      "argument_mapping": {
+        "components": "n_components"
+      },
+      "latency_ms": 19.798
+    },
+    {
+      "intent": "partition points with k means clustering",
+      "expected_function": "sklearn.cluster.KMeans",
+      "selected_function": "sklearn.cluster.KMeans",
+      "status": "resolved",
+      "ranked_top5": [
+        "sklearn.cluster.KMeans"
+      ],
+      "semantic_top5": [
+        "sklearn.cluster.KMeans",
+        "sklearn.preprocessing.StandardScaler",
+        "sklearn.decomposition.PCA",
+        "numpy.mean",
+        "numpy.std"
+      ],
+      "argument_mapping": {
+        "clusters": "n_clusters",
+        "seed": "random_state"
+      },
+      "latency_ms": 15.607
+    },
+    {
+      "intent": "measure squared error between predictions and truth",
+      "expected_function": "sklearn.metrics.mean_squared_error",
+      "selected_function": "sklearn.metrics.mean_squared_error",
+      "status": "resolved",
+      "ranked_top5": [
+        "sklearn.metrics.mean_squared_error",
+        "sklearn.metrics.accuracy_score"
+      ],
+      "semantic_top5": [
+        "sklearn.metrics.mean_squared_error",
+        "sklearn.metrics.accuracy_score",
+        "scipy.stats.ttest_ind",
+        "sklearn.linear_model.LinearRegression",
+        "scipy.stats.zscore"
+      ],
+      "argument_mapping": {
+        "actual": "y_true",
+        "predicted": "y_pred"
+      },
+      "latency_ms": 14.207
+    },
+    {
+      "intent": "read a comma separated data file",
+      "expected_function": "pandas.read_csv",
+      "selected_function": "pandas.read_csv",
+      "status": "resolved",
+      "ranked_top5": [
+        "pandas.read_csv"
+      ],
+      "semantic_top5": [
+        "pandas.read_csv",
+        "pandas.concat",
+        "scipy.stats.zscore",
+        "statistics.stdev",
+        "scipy.stats.pearsonr"
+      ],
+      "argument_mapping": {
+        "path": "filepath_or_buffer",
+        "delimiter": "sep"
+      },
+      "latency_ms": 17.228
+    },
+    {
+      "intent": "normal random samples with seed",
+      "expected_function": "scipy.stats.norm.rvs",
+      "selected_function": "scipy.stats.norm.rvs",
+      "status": "resolved",
+      "ranked_top5": [
+        "scipy.stats.norm.rvs"
+      ],
+      "semantic_top5": [
+        "scipy.stats.norm.rvs",
+        "numpy.random.normal",
+        "numpy.random.randint",
+        "numpy.random.uniform",
+        "numpy.random.exponential"
+      ],
+      "argument_mapping": {
+        "mean": "loc",
+        "std": "scale",
+        "count": "size",
+        "seed": "random_state"
+      },
+      "latency_ms": 13.371
+    }
+  ]
+}

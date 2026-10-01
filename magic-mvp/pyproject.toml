@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semantic-function-magic"
+version = "0.1.0"
+description = "Resolve Python function intents with a local sentence transformer and an allowlist"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = [
+  "numpy>=1.26,<3",
+  "scipy>=1.11,<2",
+  "pandas>=2.1,<3",
+  "scikit-learn>=1.4,<2",
+  "sentence-transformers>=5.1,<6",
+  "transformers>=4.56,<5",
+  "torch>=2.2,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "ruff>=0.12,<1", "build>=1.2,<2"]
+
+[project.scripts]
+magic = "magic.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["magic*"]
+
+[tool.setuptools.package-data]
+magic = ["data/*.json", "py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = ["model: exercises the real local sentence transformer"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

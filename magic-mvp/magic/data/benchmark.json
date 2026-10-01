@@ -1,0 +1,250 @@
+[
+  {
+    "intent": "average of these numbers",
+    "expected_function": "numpy.mean"
+  },
+  {
+    "intent": "find the central value of sorted observations",
+    "expected_function": "numpy.median"
+  },
+  {
+    "intent": "compute population standard deviation",
+    "expected_function": "numpy.std"
+  },
+  {
+    "intent": "measure the population variance",
+    "expected_function": "numpy.var"
+  },
+  {
+    "intent": "add together all the values",
+    "expected_function": "numpy.sum"
+  },
+  {
+    "intent": "return the least element of an array",
+    "expected_function": "numpy.min"
+  },
+  {
+    "intent": "find the greatest element",
+    "expected_function": "numpy.max"
+  },
+  {
+    "intent": "multiply every number together",
+    "expected_function": "numpy.prod"
+  },
+  {
+    "intent": "compute a quantile of the data",
+    "expected_function": "numpy.quantile"
+  },
+  {
+    "intent": "find the 90th percentile of observations",
+    "expected_function": "numpy.percentile"
+  },
+  {
+    "intent": "deduplicate the values in an array",
+    "expected_function": "numpy.unique"
+  },
+  {
+    "intent": "put values into ascending order",
+    "expected_function": "numpy.sort"
+  },
+  {
+    "intent": "take the dot product of two vectors",
+    "expected_function": "numpy.dot"
+  },
+  {
+    "intent": "measure the length of a vector",
+    "expected_function": "numpy.linalg.norm"
+  },
+  {
+    "intent": "generate Gaussian random values",
+    "expected_function": "numpy.random.normal"
+  },
+  {
+    "intent": "draw uniformly distributed random samples",
+    "expected_function": "numpy.random.uniform"
+  },
+  {
+    "intent": "sample exponentially distributed waiting times",
+    "expected_function": "numpy.random.exponential"
+  },
+  {
+    "intent": "draw random integer values within bounds",
+    "expected_function": "numpy.random.randint"
+  },
+  {
+    "intent": "evaluate Gaussian probability density",
+    "expected_function": "scipy.stats.norm.pdf"
+  },
+  {
+    "intent": "normal cumulative probability",
+    "expected_function": "scipy.stats.norm.cdf"
+  },
+  {
+    "intent": "convert a Gaussian probability into a z score",
+    "expected_function": "scipy.stats.norm.ppf"
+  },
+  {
+    "intent": "create a frozen Gaussian distribution object",
+    "expected_function": "scipy.stats.norm"
+  },
+  {
+    "intent": "test whether two independent groups have different means",
+    "expected_function": "scipy.stats.ttest_ind"
+  },
+  {
+    "intent": "measure linear correlation between variables",
+    "expected_function": "scipy.stats.pearsonr"
+  },
+  {
+    "intent": "measure rank correlation between variables",
+    "expected_function": "scipy.stats.spearmanr"
+  },
+  {
+    "intent": "convert observations into z scores",
+    "expected_function": "scipy.stats.zscore"
+  },
+  {
+    "intent": "sample standard deviation",
+    "expected_function": "statistics.stdev"
+  },
+  {
+    "intent": "unbiased sample variance",
+    "expected_function": "statistics.variance"
+  },
+  {
+    "intent": "reduce dimensions using PCA",
+    "expected_function": "sklearn.decomposition.PCA"
+  },
+  {
+    "intent": "group observations into clusters",
+    "expected_function": "sklearn.cluster.KMeans"
+  },
+  {
+    "intent": "fit an ordinary least squares linear regression",
+    "expected_function": "sklearn.linear_model.LinearRegression"
+  },
+  {
+    "intent": "predict binary class labels using logistic regression",
+    "expected_function": "sklearn.linear_model.LogisticRegression"
+  },
+  {
+    "intent": "create a reusable standard feature scaler",
+    "expected_function": "sklearn.preprocessing.StandardScaler"
+  },
+  {
+    "intent": "rescale features into a zero to one interval",
+    "expected_function": "sklearn.preprocessing.MinMaxScaler"
+  },
+  {
+    "intent": "average squared prediction residuals",
+    "expected_function": "sklearn.metrics.mean_squared_error"
+  },
+  {
+    "intent": "fraction of predicted classes that are correct",
+    "expected_function": "sklearn.metrics.accuracy_score"
+  },
+  {
+    "intent": "load a local CSV into a data table",
+    "expected_function": "pandas.read_csv"
+  },
+  {
+    "intent": "append dataframe rows into one combined table",
+    "expected_function": "pandas.concat"
+  },
+  {
+    "intent": "turn date strings into datetime values",
+    "expected_function": "pandas.to_datetime"
+  },
+  {
+    "intent": "draw random normal samples",
+    "expected_function": "numpy.random.normal",
+    "arguments": {
+      "mean": 1,
+      "std": 5,
+      "samples": 100
+    },
+    "expected_mapping": {
+      "mean": "loc",
+      "std": "scale",
+      "samples": "size"
+    }
+  },
+  {
+    "intent": "calculate cumulative normal probability",
+    "expected_function": "scipy.stats.norm.cdf",
+    "arguments": {
+      "value": 1.96
+    },
+    "expected_mapping": {
+      "value": "x"
+    }
+  },
+  {
+    "intent": "reduce dimensionality using principal components",
+    "expected_function": "sklearn.decomposition.PCA",
+    "arguments": {
+      "components": 2
+    },
+    "expected_mapping": {
+      "components": "n_components"
+    }
+  },
+  {
+    "intent": "partition points with k means clustering",
+    "expected_function": "sklearn.cluster.KMeans",
+    "arguments": {
+      "clusters": 3,
+      "seed": 42
+    },
+    "expected_mapping": {
+      "clusters": "n_clusters",
+      "seed": "random_state"
+    }
+  },
+  {
+    "intent": "measure squared error between predictions and truth",
+    "expected_function": "sklearn.metrics.mean_squared_error",
+    "arguments": {
+      "actual": [
+        1,
+        2
+      ],
+      "predicted": [
+        1,
+        3
+      ]
+    },
+    "expected_mapping": {
+      "actual": "y_true",
+      "predicted": "y_pred"
+    }
+  },
+  {
+    "intent": "read a comma separated data file",
+    "expected_function": "pandas.read_csv",
+    "arguments": {
+      "path": "example.csv",
+      "delimiter": ","
+    },
+    "expected_mapping": {
+      "path": "filepath_or_buffer",
+      "delimiter": "sep"
+    }
+  },
+  {
+    "intent": "normal random samples with seed",
+    "expected_function": "scipy.stats.norm.rvs",
+    "arguments": {
+      "mean": 0,
+      "std": 1,
+      "count": 10,
+      "seed": 42
+    },
+    "expected_mapping": {
+      "mean": "loc",
+      "std": "scale",
+      "count": "size",
+      "seed": "random_state"
+    }
+  }
+]

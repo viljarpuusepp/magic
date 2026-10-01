@@ -1,0 +1,11 @@
+# Versions used for the verified MVP. torch also supports a CPU build.
+torch==2.8.0
+sentence-transformers==5.1.1
+transformers==4.56.2
+numpy==2.5.3
+scipy==1.18.1
+pandas==2.2.3
+scikit-learn==1.9.1
+pytest==8.4.2
+ruff==0.16.9
+build==1.6.1
